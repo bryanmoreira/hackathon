@@ -1,0 +1,1 @@
+<img class="w-1/2 h-auto mx-auto" src="{{ asset('storage/images/logo.png') }}" alt="Logo">
