@@ -1,6 +1,6 @@
 <x-form-section submit="updateProfileInformation">
     <x-slot name="title">
-        {{ __('Profile Information') }}
+        {{ __('Informações do perfil') }}
     </x-slot>
 
     <x-slot name="description">
@@ -54,14 +54,14 @@
 
         <!-- Name -->
         <div class="col-span-6 sm:col-span-4">
-            <x-label for="name" value="{{ __('Name') }}" />
+            <x-label for="name" value="{{ __('Nome') }}" />
             <x-input id="name" type="text" class="mt-1 block w-full" wire:model="state.name" required autocomplete="name" />
             <x-input-error for="name" class="mt-2" />
         </div>
 
         <!-- Email -->
         <div class="col-span-6 sm:col-span-4">
-            <x-label for="email" value="{{ __('Email') }}" />
+            <x-label for="email" value="{{ __('E-mail') }}" />
             <x-input id="email" type="email" class="mt-1 block w-full" wire:model="state.email" required autocomplete="username" />
             <x-input-error for="email" class="mt-2" />
 
@@ -81,6 +81,21 @@
                 @endif
             @endif
         </div>
+
+        <!-- CRM -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="crm" value="{{ __('CRM') }}" />
+            <x-input id="crm" type="text" class="mt-1 block w-full" wire:model="state.crm" required autocomplete="crm" disabled />
+            <x-input-error for="crm" class="mt-2" />
+        </div>        
+
+        <!-- Especialidade -->
+        <div class="col-span-6 sm:col-span-4">
+            <x-label for="specialty" value="{{ __('Especialidade') }}" />
+            <x-input id="specialty" type="text" class="mt-1 block w-full" wire:model="state.specialty" required autocomplete="specialty" disabled />
+            <x-input-error for="specialty" class="mt-2" />
+        </div>
+
     </x-slot>
 
     <x-slot name="actions">
