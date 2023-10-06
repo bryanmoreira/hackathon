@@ -54,8 +54,8 @@ No Vs Code abra a pasta do projeto chamada 'database' e altere as linhas 11 e 14
 > * DB_CONNECTION=sqlite
 > * DB_DATABASE=database/database.sqlite
 
-Em seguida, copie o caminho do arquivo database/database.sqlite e substitua no DB_DATABASE
-> * C:\Users\Desktop\Documents\hackathon\database\database.sqlite
+Em seguida, copie o caminho do arquivo database/database.sqlite e substitua no DB_DATABASE, como por exemplo:
+> * DB_DATABASE=C:\Users\Desktop\Documents\hackathon\database\database.sqlite
 
 
 ### Executar as Migrações
